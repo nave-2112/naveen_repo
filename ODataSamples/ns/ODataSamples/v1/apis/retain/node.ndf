@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">odataService</value>
+  <value name="node_nsName">ODataSamples.v1.apis:retain</value>
+  <value name="node_pkg">ODataSamples</value>
+  <null name="node_comment"/>
+  <record name="ODataSchema" javaclass="com.wm.util.Values">
+    <value name="Namespace">ODataSamples.v1.apis:retain</value>
+    <null name="Alias"/>
+    <value name="ODataVersion">v2</value>
+    <array name="EntityType" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="Name">dbo_wms</value>
+        <value name="SourceId">dbo.wms</value>
+        <value name="ConnectionAlias">adapterService.service:connections</value>
+        <value name="AdapterType">JDBCAdapter</value>
+        <array name="Property" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">ID</value>
+            <value name="Type">Int32</value>
+            <value name="SourceId">ID</value>
+            <value name="JavaType">INT</value>
+            <Boolean name="IsKey">true</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">false</Boolean>
+              <null name="Default"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">item</value>
+            <value name="Type">String</value>
+            <value name="SourceId">item</value>
+            <value name="JavaType">STRING</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+              <value name="MaxLength">20</value>
+              <Boolean name="FixedLength">false</Boolean>
+              <Boolean name="Unicode">true</Boolean>
+              <null name="Collation"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">discription</value>
+            <value name="Type">String</value>
+            <value name="SourceId">discription</value>
+            <value name="JavaType">STRING</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+              <value name="MaxLength">20</value>
+              <Boolean name="FixedLength">false</Boolean>
+              <Boolean name="Unicode">true</Boolean>
+              <null name="Collation"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">qtyinhand</value>
+            <value name="Type">Int32</value>
+            <value name="SourceId">qtyinhand</value>
+            <value name="JavaType">INT</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">ordersPending</value>
+            <value name="Type">Int32</value>
+            <value name="SourceId">ordersPending</value>
+            <value name="JavaType">INT</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">availability</value>
+            <value name="Type">Boolean</value>
+            <value name="SourceId">availability</value>
+            <value name="JavaType">BOOLEAN</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">dateOfOrder</value>
+            <value name="Type">DateTimeOffset</value>
+            <value name="SourceId">dateOfOrder</value>
+            <value name="JavaType">SQLTIMESTAMP</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+              <null name="Precision"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">createdDate</value>
+            <value name="Type">DateTimeOffset</value>
+            <value name="SourceId">createdDate</value>
+            <value name="JavaType">SQLTIMESTAMP</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+              <null name="Precision"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">modifiedDate</value>
+            <value name="Type">DateTimeOffset</value>
+            <value name="SourceId">modifiedDate</value>
+            <value name="JavaType">SQLTIMESTAMP</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+              <null name="Precision"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">costPerUnit</value>
+            <value name="Type">Double</value>
+            <value name="SourceId">costPerUnit</value>
+            <value name="JavaType">DOUBLE</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">totalCost</value>
+            <value name="Type">Double</value>
+            <value name="SourceId">totalCost</value>
+            <value name="JavaType">DOUBLE</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">itemsDelivered</value>
+            <value name="Type">Int32</value>
+            <value name="SourceId">itemsDelivered</value>
+            <value name="JavaType">INT</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">true</Boolean>
+              <null name="Default"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+        </array>
+        <array name="NavigationProperty" type="record" depth="1">
+        </array>
+      </record>
+    </array>
+    <array name="ComplexType" type="record" depth="1">
+    </array>
+    <array name="Association" type="record" depth="1">
+    </array>
+    <Boolean name="useCustomFilter">false</Boolean>
+  </record>
+  <value name="nsODataServiceNodeVersion">V1</value>
+  <Boolean name="useCustomFilter">false</Boolean>
+  <array name="nsODataServiceNodeReferences" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="entityTypeName">dbo_wms</value>
+      <array name="entityTypeReferences" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">GET</value>
+          <value name="etServiceName">ODataSamples.v1.apis._retain.dbo_wms:_retrieve</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">POST</value>
+          <value name="etServiceName">ODataSamples.v1.apis._retain.dbo_wms:_insert</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">PUT</value>
+          <value name="etServiceName">ODataSamples.v1.apis._retain.dbo_wms:_update</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">DELETE</value>
+          <value name="etServiceName">ODataSamples.v1.apis._retain.dbo_wms:_delete</value>
+        </record>
+      </array>
+    </record>
+  </array>
+</Values>
